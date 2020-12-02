@@ -1,5 +1,4 @@
 extends layout
-
 block content
  .row.page-header
   .col-lg-12
@@ -17,26 +16,28 @@ block content
         p Centrum Garden AVM
         .panel.panel-primary
          .panel-heading
-            h2.panel-title Açýlýþ Saatleri
+            h2.panel-title AÃ§Ä±lÄ±ÅŸ Saatleri
          .panel-body
             p
                 | Pazartesi-Cuma: 7:00-23:00
             p
                 | Cumartesi: 8:00-22:00
             p
-                | Pazar: Kapalý
+                | Pazar: KapalÄ±
         .panel.panel-primary
          .panel-heading
-            h2.panel-title Neler Var?
+            h2.panel-title Neler Var
          .panel-body
             span.label.label-warning
-                span.glyphicon.glyphicon-ok
-                | &nbsp; Dünya Kahveleri
+                span.glyphicon.glypicon-ok
+                | &nbsp; DÃ¼nya Kahveleri
+            | &nbsp; 
             span.label.label-warning
-                span.glyphicon.glyphicon-ok
+                span.glyphicon.glypicon-ok
                 | &nbsp; Kekler
+            | &nbsp; 
             span.label.label-warning
-                span.glyphicon.glyphicon-ok
+                span.glyphicon.glypicon-ok
                 | &nbsp; Pastalar
             | &nbsp;
      .col-xs-12.col-sm-6.location-map
@@ -46,36 +47,31 @@ block content
         .panel-body
             -var enlem=37.781406
               -var boylam=30.565119
-              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=' + enlem + ',' + boylam + '&zoom=12&size=600x400&markers=' + enlem + ',' + boylam + '&key=AIzaSyCmmKygTpBzHG0ZEciJpAdxC9v_tWHagnE')
+              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center='
+              +enlem+','+boylam+'&zoom=12&size=600x400&markers='+enlem+','+boylam+'&key=AIzaSyCmmKygTpBzHGOZEciJpAdxC9v_tWHagnE')
  .row
   .col-xs-12
     .panel.panel-primary.review-panel
       .panel-heading
-        a.btn.btn-default.pull-right(href='mekan/yorum/yeni') Yorum Ekle
-        h2.panel-title Müþteri Yorumlarý
+        a.btn.btn-default.pull-right(href='/mekan/yorum/yeni') Yorum Ekle
+        h2.panel-title MÃ¼ÅŸteri YorumlarÄ±
       .panel-body.review-container
        .row
         .review
-           .well.well-sm.review-header
-             span.rating
-              span.glyphicon.glyphicon-star
-              span.glyphicon.glyphicon-star
-              span.glyphicon.glyphicon-star
-              span.glyphicon.glyphicon-star
-              span.glyphicon.glyphicon-star-empty
-             span.reviewAuthor Ataman Kunbuk
-             small.reviewTimestamp &nbsp; 1 Aralýk 2020
-           .col-cs-12
-              p Kahvelerin tadý hoþ.
-              
-      
-            
-
-               
+          .well.well-sm.review-header
+            span.rating
+             span.glyphicon.glyphicon-star
+             span.glyphicon.glyphicon-star
+             span.glyphicon.glyphicon-star
+             span.glyphicon.glyphicon-star
+             span.glyphicon.glyphicon-star-empty
+            span.reviewAuthor AsÄ±m Sinan YÃ¼ksel
+            small.reviewTimestamp &nbsp;  23 KasÄ±m 2020
+          .col-xs-12
+             p Kahveler gÃ¼zel.
 
 
 
 
 
-      
-    
+
