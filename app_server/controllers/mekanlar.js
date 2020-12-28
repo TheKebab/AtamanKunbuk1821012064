@@ -8,7 +8,7 @@ const anaSayfa = function (req, res, next) {
       siteAd: "Mekan32",
       aciklama: "Isparta civarındaki mekanları keşfedin!",
     },
-    footer: "Kerem Kocaekiz",
+    footer:"Ataman Kunbuk",
     mekanlar: [
       {
         ad: "Starbucks",
@@ -18,33 +18,34 @@ const anaSayfa = function (req, res, next) {
         mesafe: "10km",
       },
       {
-        ad: "Gloria Jeans",
+        ad: "Hell-Hot Fast Food",
         adres: "Iyaş AVM",
         puan: "2",
-        imkanlar: ["kahve", "kek", "çay"],
+        imkanlar: ["Dürüm", "Döner", "Hamburger"],
         mesafe: "5km",
       },
       {
-        ad: "Sarımsak Gurme",
-        adres: "Centrum Garden",
-        puan: "5",
-        imkanlar: ["Yemek", "Tatlı", "İçecek"],
-        mesafe: "10km",
-      },
-      {
-        ad: "Iyaş Bulvar",
-        adres: "Iyaş Bulvar",
-        puan: "2",
-        imkanlar: ["Alışveriş", "Eğlence", "Yemek"],
-        mesafe: "8km",
-      },
-      {
-        ad: "Kaktüs Cadde",
+        ad: "For Sale Pub",
         adres: "Iyaş AVM",
         puan: "5",
-        imkanlar: ["Yemek", "Tatlı", "İçecek"],
-        mesafe: "2km",
+        imkanlar: ["Bira", "Sandviç", "Fıstık"],
+        mesafe: "5km",
       },
+      {
+        ad: "Benim Adım İskender",
+        adres: "Iyaş AVM",
+        puan: "4",
+        imkanlar: ["İskender", "Kebap","Döner"],
+        mesafe: "5km",
+      },
+      {
+        ad: "The Pastane",
+        adres: "Çünür",
+        puan: "4",
+        imkanlar: ["Pasta", "Börek", "Çay"],
+        mesafe: "10km",
+      },
+
     ],
   });
 };
@@ -53,7 +54,7 @@ const mekanBilgisi = function (req, res, next) {
   res.render("mekan-detay", {
     baslik: "Mekan Bilgisi",
     sayfaBaslik: "Starbucks",
-    footer: "Kerem Kocaekiz",
+    footer:"Ataman Kunbuk",
     mekanBilgisi: {
       ad: "Starbucks",
       adres: "Centrum Garden",
@@ -83,10 +84,10 @@ const mekanBilgisi = function (req, res, next) {
       ],
       yorumlar: [
         {
-          yorumYapan: "Kerem Kocaekiz",
+          yorumYapan: "Ataman Kunbuk",
           puan: "3",
           tarih: "1 Aralık 2020",
-          yorumMetni: "Kahveleri Çok Kötü",
+          yorumMetni: "Denendiniz.",
         },
       ],
     },

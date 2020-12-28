@@ -22,23 +22,4 @@ kapat = function (msg, callback) {
     callback();
   });
 };
-
-process.once("SIGUSR2", function () {
-  kapat("Nodemon kapatıldı\n", function () {
-    process.kill(process.pid, "SIGUSR2");
-  });
-});
-
-process.on("SIGINT", function () {
-  kapat("Uygulama kapatıldı\n", function () {
-    process.exit(0);
-  });
-});
-
-process.on("SIGTERM", function () {
-  kapat("Heroku kapatıldı\n", function () {
-    process.exit(0);
-  });
-});
-
-require("./mekansema");
+require('./mekansema'); 

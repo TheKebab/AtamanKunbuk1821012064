@@ -19,9 +19,9 @@ block content
                                 p
                                     | #{saat.gunler}
                                     if(saat.kapali)
-                                        |  Kapalı
+                                        | Kapalı
                                     else
-                                        |  #{saat.acilis}-#{saat.kapanis}
+                                        | #{saat.acilis}-#{saat.kapanis}
                     .panel.panel-primary
                         .panel-heading
                             h2.panel-title Neler Var
@@ -53,7 +53,7 @@ block content
                             .review
                                 .well.well-sm.review-header
                                     span.rating
-                                    +puanOlustur(yorum.puan) &nbsp;
+                                    +puanOlustur(yorum.puan)
                                     span.reviewAuthor= yorum.yorumYapan
                                     |   &nbsp;
                                     small.reviewTimestamp= yorum.tarih
